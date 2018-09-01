@@ -14,9 +14,6 @@ const Header = () => {
       <NavBarItem activeClassName="active" to="/writings">
         Writings
       </NavBarItem>
-      <NavBarItem activeClassName="active" to="/portfolio">
-        Portfolio
-      </NavBarItem>
     </HeaderContainer>
   );
 };

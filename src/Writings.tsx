@@ -6,23 +6,15 @@ const Home = () => {
   return (
     <ContentContainer>
       <ParagraphContainer>
-        <Title>
-          Hi, I'm Rein.
-          <br /> I build web and native applications <br />
-          with React and GraphQL
-        </Title>
-
-        <ButtonContainer target="_blank" href="https://calendly.com/reinvanimschoot">
-          <CallButton>
-            <MdHeadsetMic style={{ paddingRight: 10 }} /> Schedule a call
-          </CallButton>
-        </ButtonContainer>
-        <ButtonContainer href="mailto:reinvanimschoot@gmail.com">
-          <CallButton>
-            <MdMailOutline style={{ paddingRight: 10 }} />
-            Send a mail
-          </CallButton>
-        </ButtonContainer>
+        <Title>Writings</Title>
+        <SubTitle target="_blank" href="https://medium.com/p/236d1d52256">
+          A quick look at react-native-typography
+        </SubTitle>
+        <Caption>Medium - Jun 4</Caption>
+        <SubTitle target="_blank" href="https://medium.com/p/709fd94b3e71">
+          Caching images in React Native
+        </SubTitle>
+        <Caption>Medium - Apr 18</Caption>
       </ParagraphContainer>
     </ContentContainer>
   );
@@ -44,8 +36,34 @@ const Title = styled.h1`
   padding: 5;
   margin: 0;
   font-size: 3rem;
+  margin-bottom: 20px;
   @media all and (max-width: 479px) {
     font-size: 2rem;
+  }
+`;
+
+const SubTitle = styled.a`
+  color: #eeeeee;
+  text-decoration: none;
+  padding: 5;
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 400;
+  @media all and (max-width: 479px) {
+    font-size: 1rem;
+  }
+`;
+
+const Caption = styled.p`
+  color: #00adb5;
+  padding: 5;
+  font-style: italic;
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  font-weight: 400;
+  @media all and (max-width: 479px) {
+    font-size: 1rem;
   }
 `;
 
@@ -55,7 +73,7 @@ const ParagraphContainer = styled.div`
   padding: 20px;
   border-left: 2px solid #00adb5;
   @media all and (max-width: 479px) {
-    border-left: none;
+    // border-left: none;
     margin: 10px;
   }
 `;

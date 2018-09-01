@@ -5,6 +5,8 @@ import styled from 'styled-components';
 // Components
 import Header from './Header';
 import Home from './Home';
+import Resume from './Resume';
+import Writings from './Writings';
 
 const App = () => (
   <Router>
@@ -12,8 +14,8 @@ const App = () => (
       <Header />
 
       <Route exact={true} path="/" component={Home} />
-      <Route path="/about" component={Home} />
-      <Route path="/topics" component={Home} />
+      <Route path="/resume" component={Resume} />
+      <Route path="/writings" component={Writings} />
     </AppContainer>
   </Router>
 );
