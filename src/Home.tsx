@@ -41,6 +41,9 @@ const Title = styled.h1`
   padding: 5;
   margin: 0;
   font-size: 3rem;
+  @media all and (max-width: 479px) {
+    font-size: 2rem;
+  }
 `;
 
 const ParagraphContainer = styled.div`
@@ -48,6 +51,10 @@ const ParagraphContainer = styled.div`
   flex-direction: column;
   padding: 20px;
   border-left: 2px solid #00adb5;
+  @media all and (max-width: 479px) {
+    border-left: none;
+    margin: 10px;
+  }
 `;
 
 const CallButton = styled.h3`

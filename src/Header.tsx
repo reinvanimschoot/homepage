@@ -33,6 +33,12 @@ const HeaderContainer = styled.div`
   border-bottom: 5px solid #00adb5;
   padding: 20px;
   padding-right: 100px;
+  @media all and (max-width: 479px) {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 20px 0 20px 0;
+  }
 `;
 
 const NavBarItem = styled(NavLink)`
@@ -46,5 +52,8 @@ const NavBarItem = styled(NavLink)`
   &.active {
     font-weight: bold;
     color: #00adb5;
+  }
+  @media all and (max-width: 479px) {
+    margin-bottom: 5px;
   }
 `;
