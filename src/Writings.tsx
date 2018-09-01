@@ -26,9 +26,21 @@ const ContentContainer = styled.div`
   flex: 1;
   display: flex;
   box-sizing: border-box;
-  align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: 35%;
+  margin-top: 5%;
   flex-direction: column;
+  @media all and (max-width: 479px) {
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 0;
+    margin-top: 50px;
+  }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    margin-left: 20%;
+    margin-top: 10%;
+  }
 `;
 
 const Title = styled.h1`

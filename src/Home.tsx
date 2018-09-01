@@ -37,6 +37,17 @@ const ContentContainer = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  @media all and (max-width: 479px) {
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 50px;
+  }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    margin-left: 10%;
+    margin-top: 30%;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
 `;
 
 const Title = styled.h1`
