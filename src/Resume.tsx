@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { MdHeadsetMic, MdMailOutline } from 'react-icons/md';
 import styled from 'styled-components';
 
 const Home = () => {
@@ -8,10 +7,15 @@ const Home = () => {
       <ParagraphContainer>
         <Title>Resume</Title>
         <SubTitle>
+          React Native Developer
+          <b> at HD Interactive</b>
+        </SubTitle>
+        <Caption>Aug 18 - Present</Caption>
+        <SubTitle>
           Full-stack Mobile / Web Consultant
           <b> at G2i</b>
         </SubTitle>
-        <Caption>Aug 18 - Present</Caption>
+        <Caption>Jun 18 - Present</Caption>
         <SubTitle>
           Full-stack Mobile / Web
           <b> Freelancer</b>
